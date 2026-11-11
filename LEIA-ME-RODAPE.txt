@@ -1,0 +1,24 @@
+ATUALIZACAO PONTUAL DO RODAPE
+
+Este ZIP e uma atualizacao, nao uma copia completa do site.
+Copie o conteudo para a raiz do repositorio, substituindo style.css e adicionando a imagem indicada.
+Nao e necessario editar HTML nem executar scripts.
+
+ALTERACOES
+Logotipo completo fornecido: simbolo, nome AssisteAgua e ASSISTENCIA TECNICA.
+Apresentacao no rodape com largura de 260 px, limitada ao espaco disponivel e proporcao original preservada.
+Texto e links do rodape no azul #087fa8, ja usado nos links e botoes do site.
+Texto dos botoes mantido branco; cores originais do logotipo preservadas.
+A identificacao legal da empresa permanece.
+
+IMPLEMENTACAO
+A imagem e apresentada no link existente da marca atraves de CSS, sem substituir os ficheiros HTML.
+O texto ou imagem existente no link continua disponivel para tecnologias de assistencia.
+O CSS original do ultimo ZIP enviado foi preservado, acrescentando apenas regras especificas para o rodape.
+Estas regras sobrepoem-se aos estilos de rodape das atualizacoes anteriores.
+SEO, dominio, animacoes, formulario e header nao sao alterados.
+
+PREVISUALIZACAO
+Extraia o ZIP e abra previsualizacao-rodape-logotipo.html.
+Depois de publicar, se o resultado antigo persistir, atualize a pagina sem cache.
+Validacao estrutural e de referencias feita; sem teste visual em navegador.

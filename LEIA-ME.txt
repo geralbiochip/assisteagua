@@ -1,0 +1,26 @@
+ASSISTEAGUA — CASA COMPLETA ANIMADA + PAGINA SERVICOS
+
+Este ZIP e uma atualizacao, nao e uma copia completa do site.
+Copie o conteudo para a raiz do repositorio, substituindo os ficheiros correspondentes.
+
+O QUE MUDA
+images/conforto-casa.svg: nova imagem fornecida, com sol completo em rotacao, ventoinha com pas rotativas, grelha fixa, fluxos de agua, reflexo nos paineis, ar exterior e efeitos adicionais nas linhas de gas, contador e equipamento mural extra.
+As paginas iniciais que ja usam este caminho passam a mostrar a nova imagem; nao e necessario substituir index.html.
+Servicos.html, en/Servicos.html, es/Servicos.html e fr/Servicos.html: imagem integrada no topo, mantendo os conteudos de servicos do arquivo enviado, com header/rodape e SEO consolidados.
+servicos-casa-animada.css: estilos de suporte para as paginas de Servicos, sem substituir as folhas de estilo partilhadas.
+images/conforto-casa-social.jpg: nova imagem estatica de partilha.
+
+O QUE NAO MUDA
+Paginas individuais dos seis servicos e respetivas ilustracoes, esquemas, formularios, sitemap, CNAME e restante site.
+Nao foi criada outra ventoinha onde nao e visivel na imagem.
+A ilustracao e conceptual, nao um projeto de ligacoes de agua, gas ou energia solar.
+
+PREVISUALIZAR
+Extraia o ZIP e abra previsualizacao-casa-completa.html.
+O botao de pausa pertence a previsualizacao, nao e acrescentado ao site.
+O movimento reduzido apresenta uma versao sem animacao.
+Se o inicio continuar com a imagem antiga apos publicar, atualize a pagina sem cache.
+
+VALIDACAO
+XML/SVG e fotograma estatico verificados, bem como referencias locais nas quatro paginas de Servicos.
+Nao foi realizado teste de animacao em navegador nesta entrega.

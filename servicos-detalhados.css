@@ -1,0 +1,1116 @@
+.service-nav{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}.service-nav a{padding:9px 14px;border:1px solid #dce8ef;border-radius:7px;background:#f0f6f9;font-size:14px}.service-section{margin:36px 0;scroll-margin-top:24px}.service-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.service-cards .card{padding:22px}.service-cards h3{font-size:20px;margin:0 0 12px}.service-cards p{margin:0;color:#63717c}.service-faq{border:1px solid #dce6ed;border-radius:9px;margin-bottom:12px}.service-faq summary{padding:18px 22px;cursor:pointer;font-weight:600;color:#264454}.service-faq[open] summary{background:#f0f6f9;border-radius:9px 9px 0 0}.service-faq p{padding:0 22px 18px;margin:15px 0 0;color:#63717c}.service-scope{padding:24px;background:#f4f7f9;border-left:3px solid #b97a20;border-radius:8px}.service-actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px}.service-note{font-size:14px;color:#63717c}@media(max-width:850px){.service-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:550px){.service-cards{grid-template-columns:1fr}.service-nav a{flex:1 1 42%;text-align:center}.service-faq summary{padding:16px}.service-actions .button{width:100%;text-align:center}}
+
+/* ============================================================
+   ESQUEMA DE INSTALACAO: AC MONO SPLIT & CALDEIRA HABITACAO
+   ============================================================ */
+.ac-diagram-section,
+.boiler-diagram-section {
+  margin: 48px 0;
+  padding: 32px 0;
+  border-top: 1px solid #e1e9ef;
+  scroll-margin-top: 24px;
+}
+.ac-diagram-header,
+.boiler-diagram-header {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.ac-diagram-header h2,
+.boiler-diagram-header h2 {
+  font-size: clamp(24px, 2.6vw, 32px);
+  margin: 6px 0 10px;
+  color: #1c2e3d;
+}
+.ac-diagram-subtitle,
+.boiler-diagram-subtitle {
+  color: #617382;
+  font-size: 15px;
+  margin: 0;
+}
+.ac-diagram-card,
+.boiler-diagram-card {
+  background: #f7fafc;
+  border: 1px solid #dce6ed;
+  border-radius: 16px;
+  padding: 32px 28px 24px;
+  box-shadow: 0 4px 16px rgba(18, 48, 70, 0.04);
+}
+.ac-diagram-visual,
+.boiler-diagram-visual {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) 1fr minmax(180px, 240px);
+  gap: 24px;
+  align-items: center;
+}
+.ac-unit-col,
+.boiler-unit-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.ac-unit-tag,
+.boiler-unit-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #087fa8;
+  margin-bottom: 12px;
+}
+.ac-step-label,
+.boiler-step-label {
+  font-size: 12.5px;
+  color: #3b4e5c;
+  margin: 14px 0 0;
+  line-height: 1.4;
+}
+.ac-step-num,
+.boiler-step-num {
+  display: inline-block;
+  font-weight: 800;
+  color: #087fa8;
+  margin-right: 4px;
+}
+
+/* AC: Unidade Interior */
+.ac-indoor-box {
+  width: 100%;
+  max-width: 220px;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f8 100%);
+  border: 1.5px solid #cfdce5;
+  border-radius: 10px;
+  padding: 12px 14px 8px;
+  box-shadow: 0 6px 14px rgba(22, 45, 62, 0.06);
+  position: relative;
+}
+.ac-indoor-topline {
+  height: 2px;
+  background: #e2ecf2;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+.ac-indoor-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px 10px;
+}
+.ac-unit-brand {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #647a8a;
+}
+.ac-indoor-display {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  background: #1c2e3d;
+  color: #41c1f0;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.4);
+}
+.ac-indoor-grille {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  margin-top: 4px;
+}
+.ac-indoor-grille span {
+  display: block;
+  width: 12px;
+  height: 2.5px;
+  background: #c2d4de;
+  border-radius: 1px;
+}
+.ac-indoor-louver {
+  height: 4px;
+  background: #b5c9d4;
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* CALDEIRA: Unidade Mural */
+.boiler-indoor-box {
+  width: 100%;
+  max-width: 200px;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f6f9 100%);
+  border: 1.5px solid #cfdce5;
+  border-radius: 12px;
+  padding: 14px 14px 12px;
+  box-shadow: 0 6px 16px rgba(22, 45, 62, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boiler-top-flue {
+  width: 32px;
+  height: 10px;
+  background: #8fa4b3;
+  border-radius: 4px 4px 0 0;
+  margin-top: -14px;
+  margin-bottom: 8px;
+}
+.boiler-indoor-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.boiler-flame-icon {
+  font-size: 14px;
+  line-height: 1;
+  color: #e67e22;
+  filter: drop-shadow(0 0 2px rgba(230,126,34,0.4));
+  animation: boiler-flame-pulse 1.8s ease-in-out infinite;
+}
+@keyframes boiler-flame-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+.boiler-control-panel {
+  width: 100%;
+  background: #1c2e3d;
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.4);
+}
+.boiler-display-temp {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #e8ad36;
+  letter-spacing: 0.5px;
+}
+.boiler-gauge-mini {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.boiler-gauge-dial {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid #41c1f0;
+  position: relative;
+}
+.boiler-gauge-dial::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 1.5px;
+  height: 5px;
+  background: #41c1f0;
+  transform: rotate(35deg);
+}
+.boiler-gauge-val {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  color: #41c1f0;
+  font-weight: 700;
+}
+.boiler-pipes-bottom {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-top: 10px;
+}
+.boiler-pipes-bottom span {
+  display: block;
+  width: 6px;
+  height: 10px;
+  background: #8fa4b3;
+  border-radius: 0 0 2px 2px;
+}
+.boiler-pipes-bottom span:nth-child(1),
+.boiler-pipes-bottom span:nth-child(2) { background: #e67e22; }
+.boiler-pipes-bottom span:nth-child(4),
+.boiler-pipes-bottom span:nth-child(5) { background: #087fa8; }
+.boiler-pipes-bottom span:nth-child(3) { background: #e8ad36; }
+
+/* Tubagens e ligacao central: AC & Caldeira */
+.ac-pipes-col,
+.boiler-pipes-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+}
+.ac-pipes-badge,
+.boiler-pipes-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.ac-pipes-badge-dist,
+.boiler-pipes-badge-dist {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: #087fa8;
+}
+.ac-pipes-badge-incl,
+.boiler-pipes-badge-incl {
+  font-size: 13px;
+  font-weight: 800;
+  color: #1c2e3d;
+}
+.ac-pipes-badge-wall,
+.boiler-pipes-badge-wall {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #7b8e9b;
+  margin-top: 2px;
+}
+.ac-pipes-track,
+.boiler-pipes-track {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px 0;
+}
+.ac-pipe,
+.boiler-pipe {
+  height: 4px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.ac-pipe-blue,
+.boiler-pipe-blue {
+  background: #a8d5e8;
+}
+.ac-pipe-orange,
+.boiler-pipe-red {
+  background: #f8cf9c;
+}
+.boiler-pipe-red {
+  background: #f6c0be;
+}
+.ac-pulse,
+.boiler-pulse {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  border-radius: 3px;
+}
+.ac-pipe-blue .ac-pulse {
+  background: linear-gradient(90deg, transparent, #087fa8, transparent);
+  animation: ac-flow-left 2.4s linear infinite;
+}
+.ac-pipe-orange .ac-pulse {
+  background: linear-gradient(90deg, transparent, #e67e22, transparent);
+  animation: ac-flow-right 2.4s linear infinite;
+}
+.boiler-pipe-blue .boiler-pulse {
+  background: linear-gradient(90deg, transparent, #087fa8, transparent);
+  animation: ac-flow-left 2.4s linear infinite;
+}
+.boiler-pipe-red .boiler-pulse {
+  background: linear-gradient(90deg, transparent, #d93829, transparent);
+  animation: ac-flow-right 2.4s linear infinite;
+}
+.ac-pulse-2, .boiler-pulse-2 { animation-delay: 1.2s !important; }
+.ac-pulse-4, .boiler-pulse-4 { animation-delay: 1.2s !important; }
+
+@keyframes ac-flow-left {
+  0% { left: 100%; }
+  100% { left: -32px; }
+}
+@keyframes ac-flow-right {
+  0% { left: -32px; }
+  100% { left: 100%; }
+}
+.ac-wall-hole,
+.boiler-wall-hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.ac-wall-circle,
+.boiler-wall-circle {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 3px solid #1c2e3d;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #f7fafc;
+}
+.ac-wall-stem,
+.boiler-wall-stem {
+  width: 2px;
+  height: 10px;
+  background: #9ab0bf;
+  margin-top: 2px;
+}
+.ac-pipes-features,
+.boiler-pipes-features {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  gap: 10px;
+}
+.ac-feature-item,
+.boiler-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #dce6ed;
+  border-radius: 8px;
+  padding: 8px 12px;
+  flex: 1;
+}
+.ac-feat-icon,
+.boiler-feat-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+.ac-feat-text,
+.boiler-feat-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 11.5px;
+  line-height: 1.25;
+  color: #3b4e5c;
+}
+.ac-feat-text strong,
+.boiler-feat-text strong {
+  color: #1c2e3d;
+}
+.ac-step-inline,
+.boiler-step-inline {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #087fa8;
+  text-transform: uppercase;
+}
+
+/* AC: Unidade Exterior */
+.ac-outdoor-box {
+  width: 100%;
+  max-width: 210px;
+  background: linear-gradient(180deg, #ffffff 0%, #edf2f6 100%);
+  border: 1.5px solid #cfdce5;
+  border-radius: 12px;
+  padding: 12px 14px 10px;
+  box-shadow: 0 6px 14px rgba(22, 45, 62, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ac-outdoor-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+.ac-fan-housing {
+  width: 86px;
+  height: 86px;
+  background: #111a20;
+  border: 4px solid #cfdbe3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+.ac-fan-rotate {
+  transform-origin: 50px 50px;
+  animation: ac-fan-spin 1.8s linear infinite;
+}
+@keyframes ac-fan-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.ac-outdoor-feet {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 10px;
+}
+.ac-outdoor-feet span {
+  display: block;
+  width: 18px;
+  height: 4px;
+  background: #8fa4b3;
+  border-radius: 2px;
+}
+
+/* CALDEIRA: Radiador / Circuito de Habitação */
+.boiler-radiator-box {
+  width: 100%;
+  max-width: 210px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f8fb 100%);
+  border: 1.5px solid #cfdce5;
+  border-radius: 10px;
+  padding: 12px 14px 10px;
+  box-shadow: 0 6px 14px rgba(22, 45, 62, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boiler-radiator-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.boiler-radiator-valve {
+  width: 18px;
+  height: 18px;
+  background: #d93829;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+}
+.boiler-radiator-fins {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  width: 100%;
+  padding: 8px 4px;
+  background: #edf3f7;
+  border-radius: 6px;
+  border: 1px solid #d8e5ed;
+}
+.boiler-radiator-fins span {
+  display: block;
+  width: 12px;
+  height: 58px;
+  background: linear-gradient(180deg, #ffffff 0%, #dce8ef 100%);
+  border-radius: 3px;
+  border: 1px solid #cadbe5;
+}
+.boiler-radiator-feet {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 8px;
+}
+.boiler-radiator-feet span {
+  display: block;
+  width: 16px;
+  height: 4px;
+  background: #8fa4b3;
+  border-radius: 2px;
+}
+
+/* Rodape / Etapas finais */
+.ac-diagram-footer,
+.boiler-diagram-footer {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #e1ebf2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.ac-footer-final,
+.boiler-footer-final {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ac-footer-final .ac-step-num,
+.boiler-footer-final .boiler-step-num {
+  font-size: 18px;
+}
+.ac-footer-kicker,
+.boiler-footer-kicker {
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #087fa8;
+}
+.ac-footer-final strong,
+.boiler-footer-final strong {
+  font-size: 13.5px;
+  color: #1c2e3d;
+}
+.ac-footer-note,
+.boiler-footer-note {
+  font-size: 12.5px;
+  color: #5b6f7e;
+  max-width: 520px;
+}
+.ac-footer-note strong,
+.boiler-footer-note strong {
+  color: #1c2e3d;
+}
+
+/* Banner Harmonioso da Calculadora BTU em Ar-Condicionado */
+.btu-calc-banner {
+  background: #f4f8fb;
+  color: #243342;
+  border: 1px solid #d8e5ed;
+  border-left: 4px solid #087fa8;
+  border-radius: 14px;
+  padding: 30px 34px;
+  margin: 40px 0;
+  box-shadow: 0 4px 18px rgba(8, 127, 168, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.btu-calc-banner-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btu-calc-badge {
+  background: #087fa8;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.btu-calc-banner h3 {
+  color: #1c2e3d;
+  font-size: clamp(20px, 2.2vw, 25px);
+  margin: 0;
+}
+.btu-calc-banner p {
+  color: #4a5c6a;
+  margin: 0;
+  line-height: 1.7;
+  font-size: 15px;
+}
+.btu-calc-banner a.link-inline {
+  color: #087fa8;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Card Infografico do Processo BTU (Print 3) */
+.btu-process-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbfe 100%);
+  border: 1px solid #d6e5ef;
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin: 10px 0 14px;
+  box-shadow: 0 2px 12px rgba(8, 127, 168, 0.04);
+}
+.btu-process-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btu-process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 80px;
+}
+.btu-step-metric {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0e374e;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.btu-step-label {
+  font-size: 12px;
+  color: #637785;
+  font-weight: 600;
+}
+.btu-step-icon {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btu-process-divider {
+  width: 32px;
+  height: 1.5px;
+  background: #cbdce7;
+}
+.btu-process-arrow {
+  color: #3fa9e2;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+.btu-process-target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.btu-indoor-mini {
+  margin-bottom: 6px;
+}
+.btu-target-label {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #0e374e;
+}
+
+.btu-calc-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.btu-banner-mainlink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: #087fa8;
+  text-decoration: underline;
+}
+.btu-banner-mainlink:hover {
+  color: #066586;
+}
+
+/* Pagina da Calculadora BTU - Layout de Colunas */
+.btu-page-grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+  margin: 36px 0 54px;
+}
+
+.btu-widget-card {
+  background: #1c2e3d;
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 32px 28px;
+  box-shadow: 0 12px 36px rgba(18, 48, 70, 0.14);
+  position: sticky;
+  top: 24px;
+}
+.btu-widget-card h2 {
+  color: #e8ad36;
+  font-size: 24px;
+  line-height: 1.25;
+  margin: 0 0 10px;
+}
+.btu-widget-desc {
+  color: #b2c5d2;
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0 0 22px;
+}
+.btu-form-group {
+  margin-bottom: 16px;
+}
+.btu-form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #e1ebf2;
+  margin-bottom: 6px;
+}
+.btu-input,
+.btu-select {
+  width: 100%;
+  background: #283c4c;
+  color: #ffffff;
+  border: 1px solid #3d5466;
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.btu-input:focus,
+.btu-select:focus {
+  outline: 2px solid #087fa8;
+  border-color: #087fa8;
+}
+.btu-btn-calc {
+  width: 100%;
+  background: #087fa8;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.15s, transform 0.15s;
+}
+.btu-btn-calc:hover {
+  background: #0a95c4;
+  transform: translateY(-1px);
+}
+.btu-widget-result {
+  margin-top: 20px;
+  padding: 18px;
+  background: #243847;
+  border: 1.5px solid #087fa8;
+  border-radius: 10px;
+  text-align: center;
+}
+.btu-result-label {
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #a4bed0;
+}
+.btu-result-value {
+  font-size: 28px;
+  font-weight: 800;
+  color: #e8ad36;
+  margin: 4px 0 6px;
+}
+.btu-result-tip {
+  font-size: 12px;
+  color: #b2c5d2;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+.btu-result-btn {
+  display: inline-block;
+  background: #087fa8;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.btu-result-btn:hover {
+  background: #0a94c2;
+  text-decoration: none;
+}
+.btu-widget-disclaimer {
+  font-size: 11px;
+  color: #8da4b3;
+  line-height: 1.45;
+  margin: 18px 0 0;
+  text-align: center;
+}
+
+.btu-content-card {
+  background: #ffffff;
+  border: 1px solid #dce6ed;
+  border-radius: 18px;
+  padding: 40px 42px;
+  box-shadow: 0 4px 20px rgba(18, 48, 70, 0.05);
+}
+
+.no-copy,
+.no-copy * {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+}
+
+.btu-content-card h2 {
+  font-size: clamp(22px, 2.2vw, 28px);
+  color: #1c2e3d;
+  margin: 0 0 16px;
+  border-bottom: 2px solid #edf2f6;
+  padding-bottom: 10px;
+}
+.btu-content-card h2:not(:first-child) {
+  margin-top: 36px;
+}
+.btu-content-card h3 {
+  font-size: 18px;
+  color: #087fa8;
+  margin: 24px 0 10px;
+}
+.btu-content-card p {
+  color: #4a5c6a;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+.btu-content-card ul {
+  margin: 0 0 20px 20px;
+  padding: 0;
+  color: #4a5c6a;
+  line-height: 1.7;
+}
+.btu-content-card li {
+  margin-bottom: 6px;
+}
+
+.btu-table-wrap {
+  overflow-x: auto;
+  margin: 22px 0 26px;
+}
+.btu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+.btu-table th {
+  background: #f0f6f9;
+  color: #1c2e3d;
+  font-weight: 800;
+  text-align: left;
+  padding: 12px 18px;
+  border-bottom: 2px solid #cfdbe3;
+}
+.btu-table td {
+  padding: 12px 18px;
+  border-bottom: 1px solid #e1eaf0;
+  color: #3b4e5c;
+}
+.btu-table tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+.btu-faq-item {
+  border: 1px solid #dce6ed;
+  border-radius: 9px;
+  margin-bottom: 12px;
+  background: #fcfdfe;
+}
+.btu-faq-item summary {
+  padding: 16px 20px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #1c2e3d;
+  font-size: 15px;
+}
+.btu-faq-item[open] summary {
+  background: #f0f6f9;
+  border-radius: 9px 9px 0 0;
+  color: #087fa8;
+}
+.btu-faq-item p {
+  padding: 14px 20px 18px;
+  margin: 0;
+  color: #556775;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 32px 0 48px;
+}
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e1eaf0;
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.18s, border-color 0.18s, box-shadow 0.18s;
+}
+.portfolio-card:hover {
+  transform: translateY(-2px);
+  border-color: #087fa8;
+  box-shadow: 0 8px 22px rgba(8, 127, 168, 0.08);
+}
+.portfolio-card-tag {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #087fa8;
+  margin-bottom: 8px;
+}
+.portfolio-card h2,
+.portfolio-card h3 {
+  font-size: 21px;
+  margin: 0 0 10px;
+  color: #1e3241;
+}
+.portfolio-card p {
+  color: #637584;
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+  flex: 1;
+}
+.portfolio-card a.button-link {
+  font-weight: 700;
+  font-size: 14px;
+  color: #087fa8;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin: 28px 0 44px;
+}
+.portfolio-item {
+  background: #ffffff;
+  border: 1px solid #e1e9ef;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-item-placeholder {
+  background: linear-gradient(135deg, #eef4f8 0%, #e1ecf3 100%);
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #728796;
+  padding: 16px;
+  text-align: center;
+}
+.portfolio-item-placeholder svg {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 8px;
+  opacity: 0.6;
+}
+.portfolio-item-placeholder span {
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.portfolio-item-info {
+  padding: 18px 20px;
+}
+.portfolio-item-info h3 {
+  font-size: 17px;
+  margin: 0 0 6px;
+  color: #1e3241;
+}
+.portfolio-item-info p {
+  font-size: 13.5px;
+  color: #657785;
+  margin: 0;
+  line-height: 1.5;
+}
+.portfolio-back-nav {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e4edf2;
+}
+
+.brands-not-found {
+  background: #f7fafc;
+  border: 1px solid #dce7ee;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.brands-not-found h3 {
+  margin: 0 0 6px;
+  color: #1c2e3d;
+  font-size: 19px;
+}
+.brands-not-found p {
+  margin: 0;
+  color: #627482;
+  font-size: 14.5px;
+}
+
+@media (max-width: 960px) {
+  .btu-page-grid {
+    grid-template-columns: 1fr;
+  }
+  .btu-widget-card {
+    position: static;
+  }
+  .btu-content-card {
+    padding: 28px 22px;
+  }
+  .ac-diagram-visual,
+  .boiler-diagram-visual {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .ac-pipes-features,
+  .boiler-pipes-features {
+    flex-direction: column;
+  }
+  .ac-diagram-footer,
+  .boiler-diagram-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .portfolio-grid,
+  .portfolio-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .portfolio-grid,
+  .portfolio-gallery {
+    grid-template-columns: 1fr;
+  }
+  .btu-process-flow {
+    gap: 18px;
+  }
+  .btu-process-divider {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ac-fan-rotate,
+  .boiler-flame-pulse {
+    animation: none;
+  }
+  .ac-pipe-blue .ac-pulse,
+  .ac-pipe-orange .ac-pulse,
+  .boiler-pipe-blue .boiler-pulse,
+  .boiler-pipe-red .boiler-pulse {
+    animation: none;
+    opacity: 0.4;
+  }
+}

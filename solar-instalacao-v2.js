@@ -1,0 +1,1 @@
+document.addEventListener('click',function(e){const b=e.target.closest('.sv-toggle');if(!b)return;const paused=b.closest('.solar-v2').classList.toggle('sv-paused');b.setAttribute('aria-pressed',String(paused));b.textContent=paused?b.dataset.play:b.dataset.pause;});

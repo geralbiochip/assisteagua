@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assisteagua/componentes/
+
+Sitemap: https://geralbiochip.github.io/assisteagua/sitemap.xml
