@@ -1,0 +1,1 @@
+document.addEventListener('click',function(e){const b=e.target.closest('.aa-toggle');if(!b)return;const s=b.closest('.aa-scheme');const paused=s.classList.toggle('aa-paused');b.setAttribute('aria-pressed',String(paused));b.textContent=paused?b.dataset.play:b.dataset.pause;});

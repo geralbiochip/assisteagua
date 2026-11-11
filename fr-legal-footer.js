@@ -1,0 +1,1 @@
+/* Legal links are rendered in the footer HTML. */

@@ -1,0 +1,1 @@
+document.addEventListener('click',function(e){const b=e.target.closest('.hw-toggle');if(!b)return;const paused=b.closest('.hw-v3').classList.toggle('hw-paused');b.setAttribute('aria-pressed',String(paused));b.textContent=paused?b.dataset.play:b.dataset.pause;});
