@@ -1,0 +1,56 @@
+ASSISTEAGUA — SITE COMPLETO RESTAURADO E CONSOLIDADO
+
+IMPORTANTE
+Este ZIP e um site completo, nao uma atualizacao parcial.
+Extrair para uma PASTA NOVA, para nao misturar ficheiros com os pacotes anteriores.
+Abrir VERIFICAR-SITE.html para conferir as imagens e depois index.html para navegar.
+Nao abrir os ficheiros a partir do interior do ZIP.
+Nao e necessario copiar partes de ZIPs anteriores nem executar scripts de integracao.
+
+DIAGNOSTICO DO ARQUIVO RECEBIDO
+AssisteAgua-3.zip continha apenas os 22 PNG da faixa de marcas dentro de images/.
+Faltavam o logotipo, a casa animada, as ilustracoes dos servicos e as fotografias.
+Apenas as novas paginas existiam nas pastas de idiomas; recuperadas 99 paginas traduzidas do arquivo completo anterior.
+
+RECUPERADO E INTEGRADO
+148 paginas publicas: 37 por idioma.
+Oito servicos: caldeiras, termocumuladores, esquentadores, ar condicionado, instalacoes de gas, paineis solares, bombas de calor e chao radiante.
+Duas novas categorias no Portfolio, sem fotografias de trabalhos inventadas.
+Oito fotografias reais distribuidas nas categorias corretas, nos quatro idiomas.
+Logotipos do header e rodape e as ilustracoes dos servicos recuperados.
+Ilustracao de Contactos incluida, com formulario real e mapa de cobertura mantidos.
+Textos de Servicos, Sobre nos e Contactos e secao da equipa tecnica integrados no HTML.
+Qualificacoes/formacao no ITG apresentadas conforme informacao do utilizador; sem numeros de credencial ou poderes de inspecao inventados.
+Novas categorias integradas estaticamente na pagina inicial, Servicos, Sobre nos, Portfolio e rodape.
+Menu compacto, cinco itens, secao ativa, imagens uniformizadas e controlos de pausa retirados.
+
+DOIS DESENHOS ESPECIFICOS EM FALTA
+Os originais exatos das ilustracoes recentes de Sobre nos e Portfolio nao constavam deste ZIP nem dos arquivos completos anteriores disponiveis.
+Nestas duas paginas, e respetivas traducoes, foi usada a casa tecnica animada como ILUSTRACAO PROVISORIA, com legenda visivel.
+Nao foi apresentada essa substituicao como recuperacao dos desenhos originais.
+As fotografias do Portfolio foram recuperadas e nao sao substituidas por essa ilustracao.
+Para recuperar o aspeto exato dessas duas imagens, e necessario reenviar os dois originais.
+
+SEM DEPENDENCIAS DE INJECAO DE CONTEUDO
+O texto e as referencias das imagens estao diretamente nos ficheiros HTML.
+Nao dependem de banner-marcas.js nem de servicos-equipa-atualizacao.js; estes modulos foram retirados.
+As animacoes sao SVG/CSS. A ampliacao de fotos e o formulario usam os seus scripts normais.
+A faixa de marcas e HTML/CSS, sem necessidade de um carregador JavaScript.
+
+NAVEGACAO LOCAL E PUBLICACAO
+Todos os links internos de navegacao sao relativos, para funcionar tanto na pasta local como no GitHub Pages.
+O parametro de verificacao foi mantido apenas nos links para os ficheiros de inicio, como contorno ao comportamento anteriormente observado. Nao obriga a abrir o site online.
+Canonicas, hreflang e sitemap usam https://geralbiochip.github.io/assisteagua/ sem esse parametro.
+CNAME nao incluido; configuracoes de Pages e DNS nao foram alteradas.
+Para publicar, enviar o CONTEUDO da pasta nova para a raiz da origem de publicacao, nao criar uma pasta adicional.
+Fazer copia de seguranca do repositorio antes de substituir os ficheiros.
+
+VERIFICACOES REALIZADAS
+148 paginas verificadas, sem referencias locais de HTML/CSS em falta.
+140 URLs preferenciais no sitemap.
+57 imagens raster e 16 SVG validados.
+13 imagens SVG com renderizacao estatica verificada.
+Sintaxe de 19 JavaScript externos e do JavaScript inline verificada.
+Textos principais, qualificacoes e imagens conferidos no HTML sem execucao de JavaScript.
+Integridade do ZIP verificada. Relatorio de paginas em validacao-paginas.csv.
+NAO realizado teste visual num navegador real, teste das animacoes em movimento, envio real do formulario ou alteracao da publicacao online.

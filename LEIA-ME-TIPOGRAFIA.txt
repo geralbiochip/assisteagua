@@ -1,0 +1,39 @@
+ASSISTEAGUA — UNIFORMIZACAO TIPOGRAFICA POR SECCAO
+
+ATUALIZACAO APENAS DE ESTILOS. NAO E UM SITE COMPLETO.
+
+APLICAR SEM PERDER IMAGENS OU PAGINAS
+1. Guarde uma copia da pasta completa do site.
+2. Extraia este ZIP separadamente.
+3. Copie apenas style.css para a raiz da pasta completa, substituindo o ficheiro com o mesmo nome.
+4. Nao apague nem substitua a pasta inteira do site por este pacote.
+5. Abra index.html na pasta completa e atualize sem cache se necessario.
+Nao e necessario substituir HTML, imagens, JavaScript ou sitemap.
+
+RETIRADA DA LEGENDA EM SOBRE NOS
+A frase de ilustracao provisoria deixa de ser apresentada na legenda da imagem do topo de Sobre.html, em PT/EN/ES/FR.
+A ocultacao e feita por CSS, identificando a pagina pela canonical ou pelo separador ativo. O texto nao e apagado fisicamente do HTML.
+A imagem nao e substituida. Isto nao recupera o desenho especifico original que estava em falta.
+A legenda informativa de Contactos nao e ocultada.
+
+HIERARQUIA UNIFORME
+Arial/Helvetica/sans-serif nos textos de pagina.
+Titulo principal: 36 px no computador, 32 px em ecra medio, 28 px em telemovel pequeno.
+Textos da barra cinzenta: 16 px, mesma cor, peso e entrelinha, incluindo hero-lead e hero-body-copy.
+Titulos de seccao: 26/24/23 px conforme o ecra.
+Titulos de cartoes: 20 px, 19 px em telemovel pequeno.
+Texto corrido e FAQ: 16 px. Texto dos cartoes: 15 px. Notas: 12 px.
+Rodape com escala propria e consistente; menu compacto e cores existentes mantidos.
+Fotografias, logotipos e textos incorporados nas imagens nao sao alterados.
+Regras anteriores de uniformizacao das imagens e ocultacao dos botoes de pausa preservadas.
+
+VERIFICACAO
+148 HTML publicos disponiveis nos arquivos enviados verificados: todos carregam style.css e usam a estrutura hero/h1.
+As quatro paginas do projeto de chao radiante geradas depois tambem foram preparadas para usar esta folha partilhada, mas nao foram reenviadas para nova inspecao nesta resposta.
+CSS original do ultimo ZIP enviado preservado, com as novas regras no final.
+Sintaxe CSS verificada. Sem teste visual de todas as paginas num navegador real.
+A ocultacao especifica usa :has(), que requer suporte do navegador.
+
+PREVISUALIZACAO
+previsualizacao-tipografia.html e uma amostra independente da hierarquia, sem as imagens do site.
+tipografia-referencia.csv lista os tamanhos e as cores adotados.

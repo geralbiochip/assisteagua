@@ -17,3 +17,39 @@ header .reference-header .language-switch a:focus-visible{outline:3px solid #e8a
 @media(max-width:1250px){header .reference-header{gap:18px}header .reference-header #navigation{gap:14px}header .reference-header #navigation a{font-size:14px}header .reference-header .brand img{width:64px;height:64px}header .reference-header .wordmark{font-size:28px}header .reference-header .tagline{font-size:10px}header .reference-header .header-details{gap:12px}header .reference-header .cert{padding-left:14px}}
 @media(max-width:1050px){header .reference-header{grid-template-columns:minmax(0,1fr) auto;gap:14px 20px;padding:18px 0}header .reference-header #navigation{grid-column:1/-1;grid-row:2;justify-content:center;flex-wrap:wrap;gap:12px 22px}header .reference-header .header-details{grid-column:2;grid-row:1}header .reference-header #navigation a{font-size:15px}}
 @media(max-width:600px){header .reference-header{grid-template-columns:minmax(0,1fr);gap:14px;padding:16px 0}header .reference-header .brand{justify-content:center}header .reference-header .brand img{width:64px;height:64px}header .reference-header .wordmark{font-size:28px}header .reference-header .tagline{font-size:11px}header .reference-header .header-details{grid-column:1;grid-row:2;justify-content:center;gap:14px}header .reference-header .cert{border-left:0;padding:0;font-size:12px}header .reference-header .cert span{font-size:10px}header .reference-header .language-switch a{min-width:34px;min-height:38px;font-size:12px}header .reference-header #navigation{grid-column:1;grid-row:3;gap:8px 18px}header .reference-header #navigation a{font-size:14px}}
+
+/* Novo logotipo completo — cabecalho e rodape, sem alterar tipografia global. */
+html body header .reference-header a.brand{
+ display:flex!important;align-items:center!important;gap:0!important;
+ width:320px!important;max-width:100%!important;flex-shrink:1!important;
+}
+html body header .reference-header a.brand>img[src]{
+ display:block!important;width:320px!important;max-width:100%!important;
+ height:auto!important;min-height:0!important;max-height:none!important;
+ object-fit:contain!important;object-position:left center!important;
+ margin:0!important;padding:0!important;background:transparent!important;
+}
+html body header .reference-header a.brand>div,
+html body header .reference-header a.brand .wordmark,
+html body header .reference-header a.brand .tagline{display:none!important}
+html body footer.aa-footer .af-grid .af-brand a.af-logo[href]{
+ display:block!important;position:static!important;width:260px!important;
+ max-width:100%!important;height:auto!important;min-height:0!important;
+ aspect-ratio:auto!important;background:none!important;background-color:transparent!important;
+ border:0!important;border-radius:0!important;margin:0 0 16px!important;
+ padding:0!important;text-indent:0!important;line-height:normal!important;overflow:visible!important;
+}
+html body footer.aa-footer .af-grid .af-brand a.af-logo[href]>img[src]{
+ display:block!important;position:static!important;inset:auto!important;
+ opacity:1!important;width:260px!important;max-width:100%!important;height:auto!important;
+ min-height:0!important;max-height:none!important;margin:0!important;padding:0!important;
+ border:0!important;border-radius:0!important;background:transparent!important;
+ object-fit:contain!important;object-position:left center!important;
+}
+html body footer.aa-footer .af-grid .af-brand a.af-logo[href]::before,
+html body footer.aa-footer .af-grid .af-brand a.af-logo[href]::after{display:none!important;content:none!important}
+@media(max-width:700px){
+ html body header .reference-header a.brand,
+ html body header .reference-header a.brand>img[src]{width:280px!important}
+ html body header .reference-header a.brand>img[src]{object-position:center!important}
+}

@@ -1,0 +1,37 @@
+ASSISTEAGUA — UM PROJETO DE CHAO RADIANTE COM BOMBA DE CALOR
+
+ATENCAO: ATUALIZACAO, NAO UM SITE COMPLETO.
+Aplicar sobre o ultimo ZIP COMPLETO restaurado e consolidado. Nao testar este pacote sozinho numa pasta vazia.
+Nao apagar nem substituir a pasta completa do site por esta atualizacao.
+
+APLICAR
+1. Faca uma copia de seguranca da pasta completa do site.
+2. Extraia este ZIP separadamente.
+3. Copie o CONTEUDO para a pasta completa existente, mantendo en/, es/, fr/ e images/. Substitua os ficheiros correspondentes, sem apagar os restantes.
+4. Abra index.html na pasta completa e entre em Portfolio > Chao radiante ou Portfolio > Bombas de calor.
+5. Tambem pode abrir diretamente Portfolio-Projeto-Chao-Radiante-Bomba-de-Calor.html na pasta completa.
+
+PROJETO
+Titulo baseado na descricao fornecida pelo utilizador: Chao radiante a agua com bomba de calor.
+As oito fotografias sao tratadas como registos do mesmo trabalho, nao como oito projetos.
+Uma pagina de projeto partilhada pelas categorias Chao radiante e Bombas de calor.
+As legendas identificam registos de execucao, sem inventar datas, localidades, marcas da bomba ou valores tecnicos.
+A galeria mostra a execucao no pavimento; a unidade da bomba de calor nao e mostrada.
+Fotografias preservadas, sem retoques, otimizadas para o site e sem metadados EXIF.
+Miniaturas e ampliacao com anterior/seguinte e Escape para fechar.
+
+CONTEUDO
+8 imagens grandes + 8 miniaturas.
+4 paginas do projeto, uma por idioma.
+8 paginas de categorias atualizadas: Chao radiante e Bombas de calor em PT, EN, ES e FR.
+As restantes galerias, imagens de topo, formacao da equipa, menu e rodape nao sao substituidos.
+Sitemap atualizado de 140 para 144 URLs, com as quatro paginas novas.
+Conteudo e fotografias presentes no HTML, sem dependencia de scripts de injecao.
+O JavaScript apenas acrescenta a ampliacao das fotografias.
+As folhas de estilo partilhadas, logotipos e faixa de marcas sao os que ja existem no site completo restaurado.
+
+VALIDACAO
+12 paginas HTML verificadas; 8 fotografias por pagina de projeto.
+Sem referencias locais em falta considerando o site completo instalado.
+16 ficheiros de imagem verificados, sintaxe CSS/JavaScript e integridade do ZIP verificadas.
+Nao realizado teste visual em navegador nem alterada a publicacao online.
