@@ -1,0 +1,138 @@
+<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Pré-visualização — explorador de serviços AssisteÁgua</title><link rel="stylesheet" href="explorador-servicos.css"><style>body{margin:0;background:#f5f8fb;color:#334a5d;font:16px/1.7 Arial,Helvetica,sans-serif}main{max-width:1200px;margin:auto;padding:26px 20px}h1,h2,h3{color:#0b4f8a}h1{font-size:30px}h2{font-size:26px}a{color:#087fa8}.demo-note{font-size:13px;border:1px solid #dce8ef;background:white;padding:14px;border-radius:8px;margin-bottom:24px}</style></head><body><main><h1>Explorador interativo de serviços</h1><p class="demo-note">Pré-visualização independente. A seleção é manual. As ligações para páginas de serviço funcionam depois de instalar o componente na pasta completa do site.</p><section class="aa-explorer" data-aa-explorer=""><div class="aa-exp-intro"><h2>Explore as soluções para o conforto da sua casa</h2><p>Selecione um equipamento na casa ou nos botões para conhecer o serviço.</p></div><div class="aa-exp-layout"><div class="aa-exp-stage"><img alt="Casa ilustrativa com equipamentos de aquecimento, água quente e climatização" class="aa-exp-image" decoding="async" height="768" src="images/explorador/casa-3d.png" width="1376"/><svg aria-label="Equipamentos e serviços" class="aa-exp-overlay" preserveAspectRatio="xMidYMid meet" preserveaspectratio="xMidYMid meet" role="group" viewBox="0 0 1376 768"><defs>
+<radialgradient cx="50%" cy="50%" id="aae-sunGlow" r="50%">
+<stop offset="0%" stop-color="#ffd166" stop-opacity="0.75"></stop>
+<stop offset="55%" stop-color="#ffb703" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#ffb703" stop-opacity="0"></stop>
+</radialgradient>
+<lineargradient id="aae-acWaveGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00b4d8" stop-opacity="0.7"></stop>
+<stop offset="100%" stop-color="#90e0ef" stop-opacity="0"></stop>
+</lineargradient>
+<lineargradient id="aae-heatWaveGrad" x1="0%" x2="0%" y1="100%" y2="0%">
+<stop offset="0%" stop-color="#ff5400" stop-opacity="0.75"></stop>
+<stop offset="100%" stop-color="#ffb703" stop-opacity="0"></stop>
+</lineargradient>
+</defs><g transform="scale(0.86 0.8533333333333334)">
+
+<!-- Sol Animado -->
+<g aria-hidden="true" class="sun-group aa-exp-effects" transform="translate(265, 195)">
+<circle class="sun-pulse" cx="0" cy="0" fill="url(#aae-sunGlow)" r="135"></circle>
+<g class="sun-rays">
+<line stroke="#ffd166" stroke-linecap="round" stroke-width="3" x1="0" x2="0" y1="-105" y2="-130"></line>
+<line stroke="#ffd166" stroke-linecap="round" stroke-width="3" x1="0" x2="0" y1="105" y2="130"></line>
+<line stroke="#ffd166" stroke-linecap="round" stroke-width="3" x1="-105" x2="-130" y1="0" y2="0"></line>
+<line stroke="#ffd166" stroke-linecap="round" stroke-width="3" x1="105" x2="130" y1="0" y2="0"></line>
+<line stroke="#ffd166" stroke-linecap="round" stroke-width="3" x1="-74" x2="-92" y1="-74" y2="-92"></line>
+<line stroke="#ffd166" stroke-linecap="round" stroke-width="3" x1="74" x2="92" y1="74" y2="92"></line>
+<line stroke="#ffd166" stroke-linecap="round" stroke-width="3" x1="74" x2="92" y1="-74" y2="-92"></line>
+<line stroke="#ffd166" stroke-linecap="round" stroke-width="3" x1="-74" x2="-92" y1="74" y2="92"></line>
+</g>
+</g>
+<!-- Fluxo nas Tubagens -->
+<g aria-hidden="true" class="pipes-layer aa-exp-effects" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<!-- Tubagem Solar -> Termoacumulador -->
+<path class="pipe-flow-warm" d="M 525 275 L 405 335 L 405 390 L 455 390" stroke="#ff6b35" stroke-width="4"></path>
+<path class="pipe-flow-cold" d="M 535 282 L 415 342 L 415 398 L 455 398" stroke="#00b4d8" stroke-width="3.5"></path>
+<!-- Tubagem Frigorífica AC Exterior -> AC Interior -->
+<path class="pipe-flow-cold" d="M 335 495 L 385 495 L 385 435 L 555 435 L 555 325 L 620 325" stroke="#00b4d8" stroke-width="3.5"></path>
+<!-- Tubagem Hidráulica Bomba de Calor -> Chão Radiante -->
+<path class="pipe-flow-warm" d="M 325 615 L 425 615 L 425 745 L 720 745" stroke="#ff5400" stroke-width="4"></path>
+<!-- Rede de Gás -> Esquentador e Caldeira -->
+<path class="pipe-flow-gas" d="M 555 565 L 555 460 L 1060 460 L 1060 365" stroke="#ffb703" stroke-width="3.5"></path>
+<path class="pipe-flow-gas" d="M 555 565 L 1220 565 L 1220 535" stroke="#ffb703" stroke-width="3.5"></path>
+</g>
+<!-- Ventoinha Motor Exterior AC (Calibrada: X=307, Y=488, Escala=0.70) -->
+<g aria-hidden="true" class="aa-exp-effects" transform="translate(307, 488) scale(0.70)">
+<g transform="skewY(14) scale(0.78, 1)">
+<g class="fan-spin-fast">
+<circle cx="0" cy="0" fill="none" r="46" stroke="rgba(255,255,255,0.35)" stroke-dasharray="10 6" stroke-width="2"></circle>
+<path d="M 0 0 C -12 -22, 12 -38, 18 -34 C 24 -28, 12 -10, 0 0 Z" fill="rgba(235, 245, 255, 0.85)"></path>
+<path d="M 0 0 C 22 -12, 38 12, 34 18 C 28 24, 10 12, 0 0 Z" fill="rgba(235, 245, 255, 0.85)"></path>
+<path d="M 0 0 C 12 22, -12 38, -18 34 C -24 28, -12 10, 0 0 Z" fill="rgba(235, 245, 255, 0.85)"></path>
+<path d="M 0 0 C -22 12, -38 -12, -34 -18 C -28 -24, -10 -12, 0 0 Z" fill="rgba(235, 245, 255, 0.85)"></path>
+<circle cx="0" cy="0" fill="#334155" r="9"></circle>
+</g>
+</g>
+</g>
+<!-- Ventoinha Bomba de Calor Exterior (Calibrada: X=285, Y=612, Escala=0.70) -->
+<g aria-hidden="true" class="aa-exp-effects" transform="translate(285, 612) scale(0.70)">
+<g transform="skewY(14) scale(0.78, 1)">
+<g class="fan-spin-slow">
+<circle cx="0" cy="0" fill="none" r="54" stroke="rgba(255,255,255,0.35)" stroke-dasharray="12 8" stroke-width="2"></circle>
+<path d="M 0 0 C -14 -26, 14 -45, 21 -40 C 28 -33, 14 -12, 0 0 Z" fill="rgba(235, 245, 255, 0.85)"></path>
+<path d="M 0 0 C 26 -14, 45 14, 40 21 C 33 28, 12 14, 0 0 Z" fill="rgba(235, 245, 255, 0.85)"></path>
+<path d="M 0 0 C 14 26, -14 45, -21 40 C -28 33, -14 12, 0 0 Z" fill="rgba(235, 245, 255, 0.85)"></path>
+<path d="M 0 0 C -26 14, -45 -14, -40 -21 C -33 -28, -12 -14, 0 0 Z" fill="rgba(235, 245, 255, 0.85)"></path>
+<circle cx="0" cy="0" fill="#334155" r="11"></circle>
+</g>
+</g>
+</g>
+<!-- Ondas de Ar Fresco do AC Interior (Calibradas: X=690, Y=365, Escala=1.00) -->
+<g aria-hidden="true" class="aa-exp-effects" transform="translate(690, 365) scale(1.00)">
+<path class="air-wave wave-1" d="M -35 0 Q 0 18, 45 45" fill="none" stroke="url(#aae-acWaveGrad)" stroke-linecap="round" stroke-width="4"></path>
+<path class="air-wave wave-2" d="M -20 5 Q 15 23, 60 50" fill="none" stroke="url(#aae-acWaveGrad)" stroke-linecap="round" stroke-width="4"></path>
+<path class="air-wave wave-3" d="M -5 10 Q 30 28, 75 55" fill="none" stroke="url(#aae-acWaveGrad)" stroke-linecap="round" stroke-width="4"></path>
+</g>
+<!-- Ondas de Calor do Chão Radiante (Calibradas: X=830, Y=725, Escala=1.00) -->
+<g aria-hidden="true" class="aa-exp-effects" transform="translate(830, 725) scale(1.00)">
+<path class="heat-rise h-1" d="M -70 0 Q -80 -22, -70 -44 T -70 -88" fill="none" stroke="url(#aae-heatWaveGrad)" stroke-linecap="round" stroke-width="4"></path>
+<path class="heat-rise h-2" d="M -25 8 Q -35 -14, -25 -36 T -25 -80" fill="none" stroke="url(#aae-heatWaveGrad)" stroke-linecap="round" stroke-width="4"></path>
+<path class="heat-rise h-3" d="M 20 8 Q 10 -14, 20 -36 T 20 -80" fill="none" stroke="url(#aae-heatWaveGrad)" stroke-linecap="round" stroke-width="4"></path>
+<path class="heat-rise h-4" d="M 65 0 Q 55 -22, 65 -44 T 65 -88" fill="none" stroke="url(#aae-heatWaveGrad)" stroke-linecap="round" stroke-width="4"></path>
+</g>
+<!-- Pontos Interativos (1 a 8) — Pontos 2 e 6 posicionados ao lado esquerdo dos motores -->
+<!-- 1: Caldeiras -->
+<g aria-controls="aa-exp-panel" aria-label="1. Caldeiras" aria-pressed="true" class="hotspot active" data-index="0" role="button" tabindex="0" transform="translate(1275, 515)">
+<circle class="hotspot-ring" cx="0" cy="0" r="22"></circle>
+<circle class="hotspot-core" cx="0" cy="0" r="15"></circle>
+<text class="hotspot-num" text-anchor="middle" x="0" y="5">1</text>
+</g>
+<!-- 2: Ar Condicionado (Unidade Interior) -->
+<g aria-controls="aa-exp-panel" aria-label="2. Ar condicionado" aria-pressed="false" class="hotspot" data-index="1" role="button" tabindex="0" transform="translate(690, 320)">
+<circle class="hotspot-ring" cx="0" cy="0" r="22"></circle>
+<circle class="hotspot-core" cx="0" cy="0" r="15"></circle>
+<text class="hotspot-num" text-anchor="middle" x="0" y="5">2</text>
+</g>
+<!-- 2: Ar Condicionado (Motor Exterior — posicionado ao lado esquerdo da unidade) -->
+<g aria-controls="aa-exp-panel" aria-label="2. Ar condicionado" aria-pressed="false" class="hotspot" data-index="1" role="button" tabindex="0" transform="translate(238, 488)">
+<circle class="hotspot-ring" cx="0" cy="0" r="22"></circle>
+<circle class="hotspot-core" cx="0" cy="0" r="15"></circle>
+<text class="hotspot-num" text-anchor="middle" x="0" y="5">2</text>
+</g>
+<!-- 3: Termoacumuladores -->
+<g aria-controls="aa-exp-panel" aria-label="3. Termocumuladores" aria-pressed="false" class="hotspot" data-index="2" role="button" tabindex="0" transform="translate(495, 385)">
+<circle class="hotspot-ring" cx="0" cy="0" r="22"></circle>
+<circle class="hotspot-core" cx="0" cy="0" r="15"></circle>
+<text class="hotspot-num" text-anchor="middle" x="0" y="5">3</text>
+</g>
+<!-- 4: Painéis Solares -->
+<g aria-controls="aa-exp-panel" aria-label="4. Painéis solares" aria-pressed="false" class="hotspot" data-index="3" role="button" tabindex="0" transform="translate(680, 215)">
+<circle class="hotspot-ring" cx="0" cy="0" r="22"></circle>
+<circle class="hotspot-core" cx="0" cy="0" r="15"></circle>
+<text class="hotspot-num" text-anchor="middle" x="0" y="5">4</text>
+</g>
+<!-- 5: Chão Radiante -->
+<g aria-controls="aa-exp-panel" aria-label="5. Chão radiante" aria-pressed="false" class="hotspot" data-index="4" role="button" tabindex="0" transform="translate(830, 745)">
+<circle class="hotspot-ring" cx="0" cy="0" r="22"></circle>
+<circle class="hotspot-core" cx="0" cy="0" r="15"></circle>
+<text class="hotspot-num" text-anchor="middle" x="0" y="5">5</text>
+</g>
+<!-- 6: Bomba de Calor (posicionado ao lado esquerdo da unidade exterior) -->
+<g aria-controls="aa-exp-panel" aria-label="6. Bombas de calor" aria-pressed="false" class="hotspot" data-index="5" role="button" tabindex="0" transform="translate(212, 612)">
+<circle class="hotspot-ring" cx="0" cy="0" r="22"></circle>
+<circle class="hotspot-core" cx="0" cy="0" r="15"></circle>
+<text class="hotspot-num" text-anchor="middle" x="0" y="5">6</text>
+</g>
+<!-- 7: Esquentadores -->
+<g aria-controls="aa-exp-panel" aria-label="7. Esquentadores" aria-pressed="false" class="hotspot" data-index="6" role="button" tabindex="0" transform="translate(1075, 330)">
+<circle class="hotspot-ring" cx="0" cy="0" r="22"></circle>
+<circle class="hotspot-core" cx="0" cy="0" r="15"></circle>
+<text class="hotspot-num" text-anchor="middle" x="0" y="5">7</text>
+</g>
+<!-- 8: Instalação a Gás -->
+<g aria-controls="aa-exp-panel" aria-label="8. Instalações de gás" aria-pressed="false" class="hotspot" data-index="7" role="button" tabindex="0" transform="translate(555, 565)">
+<circle class="hotspot-ring" cx="0" cy="0" r="22"></circle>
+<circle class="hotspot-core" cx="0" cy="0" r="15"></circle>
+<text class="hotspot-num" text-anchor="middle" x="0" y="5">8</text>
+</g>
+</g></svg></div><div class="aa-exp-sidebar"><div aria-labelledby="aa-exp-title" class="aa-exp-card" id="aa-exp-panel" role="region"><p class="aa-exp-category" data-role="category">Aquecimento</p><h3 data-role="title" id="aa-exp-title">Caldeiras</h3><p class="aa-exp-description" data-role="description">Diagnóstico, manutenção e instalação de caldeiras, com avaliação do equipamento e das condições da intervenção.</p><ul data-role="items"><li>Avaliação de avarias e funcionamento</li><li>Manutenção ajustada ao equipamento</li><li>Trabalhos e orçamento confirmados na proposta</li></ul><div class="aa-exp-actions"><a class="aa-exp-button" data-role="service" href="Caldeiras.html">Conhecer o serviço</a><a class="aa-exp-button" href="Contato.html">Pedir avaliação</a></div><p class="aa-exp-phone"><a href="tel:+351964713604">964 713 604</a><span>Chamada para a rede móvel nacional</span></p></div><div aria-label="Equipamentos e serviços" class="aa-exp-controls" role="group"><button aria-controls="aa-exp-panel" aria-pressed="true" class="aa-exp-pill is-active" data-index="0" type="button">1. Caldeiras</button><button aria-controls="aa-exp-panel" aria-pressed="false" class="aa-exp-pill" data-index="1" type="button">2. Ar condicionado</button><button aria-controls="aa-exp-panel" aria-pressed="false" class="aa-exp-pill" data-index="2" type="button">3. Termocumuladores</button><button aria-controls="aa-exp-panel" aria-pressed="false" class="aa-exp-pill" data-index="3" type="button">4. Painéis solares</button><button aria-controls="aa-exp-panel" aria-pressed="false" class="aa-exp-pill" data-index="4" type="button">5. Chão radiante</button><button aria-controls="aa-exp-panel" aria-pressed="false" class="aa-exp-pill" data-index="5" type="button">6. Bombas de calor</button><button aria-controls="aa-exp-panel" aria-pressed="false" class="aa-exp-pill" data-index="6" type="button">7. Esquentadores</button><button aria-controls="aa-exp-panel" aria-pressed="false" class="aa-exp-pill" data-index="7" type="button">8. Instalações de gás</button></div><p aria-live="polite" class="aa-exp-sr" data-role="status"></p></div></div><p class="aa-exp-note">Ilustração conceptual. O tipo de sistema e o âmbito da intervenção são confirmados após avaliação.</p><noscript><p>Sem JavaScript, consulte os oito cartões de serviços apresentados abaixo.</p></noscript><script data-aa-exp-data="" type="application/json">{"services": [{"title": "Caldeiras", "category": "Aquecimento", "description": "Diagnóstico, manutenção e instalação de caldeiras, com avaliação do equipamento e das condições da intervenção.", "items": ["Avaliação de avarias e funcionamento", "Manutenção ajustada ao equipamento", "Trabalhos e orçamento confirmados na proposta"], "href": "Caldeiras.html"}, {"title": "Ar condicionado", "category": "Climatização", "description": "Instalação, manutenção e assistência a unidades interiores e exteriores, de acordo com o equipamento e as condições do local.", "items": ["Avaliação do sistema e do espaço", "Limpeza e manutenção dos componentes abrangidos", "Âmbito da intervenção confirmado antes de avançar"], "href": "Ar-Condicionado.html"}, {"title": "Termocumuladores", "category": "Água quente", "description": "Avaliação de problemas no aquecimento da água, fugas e funcionamento irregular de equipamentos de acumulação.", "items": ["Diagnóstico do equipamento", "Manutenção, reparação ou substituição após avaliação", "Apoio na escolha de uma solução adequada"], "href": "Termocumuladores.html"}, {"title": "Painéis solares", "category": "Solar térmico", "description": "Avaliação, manutenção e assistência a sistemas solares térmicos, com confirmação do tipo de sistema e dos trabalhos necessários.", "items": ["Avaliação dos equipamentos e da instalação", "Manutenção conforme o sistema e o fabricante", "Proposta de intervenção com âmbito definido"], "href": "Paineis-Solares.html"}, {"title": "Chão radiante", "category": "Conforto térmico", "description": "Avaliação, instalação e assistência a soluções de piso radiante, com definição do tipo de sistema e dos trabalhos adequados ao espaço.", "items": ["Análise da instalação e das necessidades", "Avaliação de anomalias e funcionamento", "Trabalhos e condições definidos no orçamento"], "href": "Chao-Radiante.html"}, {"title": "Bombas de calor", "category": "Aquecimento e água quente", "description": "Avaliação, instalação, manutenção e assistência a bombas de calor, com uma proposta ajustada ao equipamento e ao imóvel.", "items": ["Análise do pedido e do equipamento", "Instalação e adaptações a confirmar na proposta", "Manutenção e diagnóstico após avaliação"], "href": "Bombas-de-Calor.html"}, {"title": "Esquentadores", "category": "Água quente", "description": "Avaliação, manutenção e reparação de esquentadores, com atenção ao funcionamento e às condições da instalação.", "items": ["Diagnóstico de falhas e paragens", "Manutenção dos componentes abrangidos", "Viabilidade e peças confirmadas após avaliação"], "href": "Esquentadores.html"}, {"title": "Instalações de gás", "category": "Instalações técnicas", "description": "Avaliação e intervenção em instalações de gás, dentro do âmbito das habilitações profissionais aplicáveis.", "items": ["Análise do pedido e das condições da instalação", "Definição dos trabalhos previstos", "Orçamento e agendamento sujeitos a confirmação"], "href": "Instalacoes-a-Gas.html"}], "selectedLabel": "Selecionado: "}</script></section></main><script src="explorador-servicos.js" defer></script></body></html>
