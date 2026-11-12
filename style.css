@@ -1148,3 +1148,105 @@ body footer.aa-footer .af-grid .af-brand a.af-logo img{
 body footer.aa-footer .af-grid .af-brand a.af-logo:focus-visible{
  outline:3px solid #087fa8!important;outline-offset:4px!important;
 }
+
+/* Areas uniformes para as imagens do topo. */
+html body main section.hero[class] .hero-grid[class] img{box-sizing:border-box!important;display:block!important;width:min(100%,520px)!important;height:320px!important;min-height:0!important;max-height:none!important;max-width:100%!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center center!important;margin-left:auto!important;margin-right:auto!important}
+html body main section.hero[class] .hero-grid[class]>.page-illustration,html body main section.hero[class] .hero-grid[class]>.portfolio-illustration,html body main section.hero[class] .hero-grid[class]>.marcas-visual{box-sizing:border-box!important;width:100%!important;max-width:520px!important;justify-self:center!important;margin-left:auto!important;margin-right:auto!important}
+@media(max-width:700px){html body main section.hero[class] .hero-grid[class] img{height:240px!important}}
+@media(max-width:400px){html body main section.hero[class] .hero-grid[class] img{height:200px!important}}
+
+/* Ocultar apenas os controlos explicitos de pausa/retoma das animacoes. */
+html body .bb-banner button.bb-pause,
+html body .hero .hero-grid .page-illustration>button,
+html body .hero .hero-grid .portfolio-illustration>button,
+html body .hero .hero-grid .marcas-visual button.marcas-animation-control,
+html body button[data-marcas-control]{display:none!important}
+
+/* Identidade tipografica comum — mesmas funcoes, mesmo estilo. */
+:root{
+ --aa-font:Arial,Helvetica,sans-serif;
+ --aa-text:#334a5d;
+ --aa-heading:#0b4f8a;
+ --aa-accent:#087fa8;
+ --aa-hero-title:36px;
+ --aa-section-title:26px;
+ --aa-card-title:20px;
+ --aa-body-size:16px;
+ --aa-card-body:15px;
+}
+html body main{font-family:var(--aa-font)!important;color:var(--aa-text)}
+html body main :is(h1,h2,h3,h4,p,li,summary,figcaption,label,input,textarea,select,button,a){font-family:var(--aa-font)!important}
+/* Barra cinzenta sob o cabecalho. */
+html body main section.hero[class]{padding-top:40px!important;padding-bottom:40px!important}
+html body main section.hero[class] .hero-grid[class] h1{
+ font-family:var(--aa-font)!important;font-size:var(--aa-hero-title)!important;
+ font-weight:700!important;line-height:1.2!important;letter-spacing:-.4px!important;
+ color:var(--aa-heading)!important;margin:0 0 16px!important;text-transform:none!important;
+}
+html body main section.hero[class] .hero-grid[class] p{
+ font-family:var(--aa-font)!important;font-size:var(--aa-body-size)!important;
+ font-weight:400!important;line-height:1.7!important;letter-spacing:normal!important;
+ color:var(--aa-text)!important;margin:0 0 14px!important;text-align:start!important;
+}
+html body main section.hero[class] .hero-grid[class] :is(p,span).eyebrow{
+ font-size:12px!important;line-height:1.5!important;font-weight:600!important;
+ color:var(--aa-accent)!important;letter-spacing:.5px!important;margin:0 0 10px!important;
+ text-transform:none!important;
+}
+html body main section.hero[class] .hero-grid[class] figcaption{
+ font-size:12px!important;line-height:1.6!important;font-weight:400!important;
+ color:#526a7b!important;letter-spacing:normal!important;margin:8px 0 0!important;
+}
+html body main section.hero[class] .hero-grid[class] ul,
+html body main section.hero[class] .hero-grid[class] li{
+ font-family:var(--aa-font)!important;font-size:var(--aa-body-size)!important;
+ line-height:1.7!important;font-weight:400!important;color:var(--aa-text)!important;
+}
+/* Titulos, paragrafos e listas das seccoes de conteudo. */
+html body main .content h2{
+ font-family:var(--aa-font)!important;font-size:var(--aa-section-title)!important;
+ line-height:1.3!important;font-weight:700!important;color:var(--aa-heading)!important;
+ letter-spacing:normal!important;margin-top:28px!important;margin-bottom:14px!important;
+}
+html body main .content h3{
+ font-family:var(--aa-font)!important;font-size:20px!important;line-height:1.4!important;
+ font-weight:600!important;color:var(--aa-heading)!important;letter-spacing:normal!important;
+}
+html body main .content :is(p,li,label){
+ font-family:var(--aa-font)!important;font-size:var(--aa-body-size)!important;
+ line-height:1.7!important;color:var(--aa-text)!important;letter-spacing:normal!important;
+}
+html body main .content p{font-weight:400!important;margin-top:0!important;margin-bottom:14px!important}
+html body main .content p.eyebrow{font-size:12px!important;font-weight:600!important;color:var(--aa-accent)!important;letter-spacing:.5px!important}
+/* Cartoes de servicos, marcas, portfolio e qualificacoes. */
+html body main .content :is(.card,.portfolio-card,.aa-team-card,.portfolio-item-info,.aa-project-card-body) :is(h2,h3){
+ font-family:var(--aa-font)!important;font-size:var(--aa-card-title)!important;
+ line-height:1.4!important;font-weight:600!important;color:var(--aa-heading)!important;
+ letter-spacing:normal!important;margin:0 0 12px!important;
+}
+html body main .content :is(.card,.portfolio-card,.aa-team-card,.portfolio-item-info,.aa-project-card-body) p{
+ font-size:var(--aa-card-body)!important;line-height:1.7!important;font-weight:400!important;
+ color:var(--aa-text)!important;letter-spacing:normal!important;margin:0 0 14px!important;
+}
+/* FAQ, notas e formularios: hierarquia consistente sem alterar os campos. */
+html body main .content details summary{font-family:var(--aa-font)!important;font-size:16px!important;line-height:1.5!important;font-weight:600!important;color:var(--aa-heading)!important}
+html body main .content details p{font-size:16px!important;line-height:1.7!important;font-weight:400!important;color:var(--aa-text)!important}
+html body main .content :is(.service-note,.brand-disclaimer,.aa-team-note,.aa-photo-hint,.aa-project-count){font-size:12px!important;line-height:1.6!important;font-weight:400!important;color:#526a7b!important;letter-spacing:normal!important}
+html body main :is(input,textarea,select){font-family:var(--aa-font)!important;font-size:16px!important;line-height:1.5!important}
+/* Apenas a tipografia dos botoes e links; o comportamento e mantido. */
+html body main :is(a.button,a.btn,button,input[type=submit]){font-family:var(--aa-font)!important;font-size:14px!important;line-height:1.4!important;font-weight:600!important;letter-spacing:normal!important}
+html body header #navigation>a{font-family:var(--aa-font)!important}
+/* Rodape com hierarquia propria e igual em todas as paginas. */
+html body footer.aa-footer{font-family:var(--aa-font)!important}
+html body footer.aa-footer :is(p,li,address){font-family:var(--aa-font)!important;font-size:13px!important;line-height:1.7!important}
+html body footer.aa-footer .af-grid h2{font-family:var(--aa-font)!important;font-size:14px!important;line-height:1.5!important;font-weight:700!important}
+html body footer.aa-footer .af-cta h2{font-family:var(--aa-font)!important;font-size:22px!important;line-height:1.35!important;font-weight:700!important}
+html body footer.aa-footer .af-call-note{font-family:var(--aa-font)!important;font-size:11px!important;line-height:1.6!important}
+html body footer.aa-footer .af-bottom :is(p,li,a){font-family:var(--aa-font)!important;font-size:11px!important;line-height:1.6!important}
+/* Retirar da apresentacao a legenda provisoria apenas em Sobre nos, nas 4 linguas. */
+html:has(head link[rel=canonical][href$="/Sobre.html"]) body main section.hero figcaption,
+html body:has(header #navigation a.is-active[href$="Sobre.html"]) main section.hero figcaption{display:none!important}
+@media(max-width:800px){:root{--aa-hero-title:32px;--aa-section-title:24px}html body main section.hero[class]{padding-top:32px!important;padding-bottom:32px!important}}
+@media(max-width:480px){:root{--aa-hero-title:28px;--aa-section-title:23px;--aa-card-title:19px}html body main section.hero[class]{padding-top:26px!important;padding-bottom:26px!important}html body header #navigation>a{font-size:13px!important}}
+
+html body main .content :is(h2,h3) a{font-family:inherit!important;font-size:inherit!important;line-height:inherit!important;font-weight:inherit!important;color:inherit!important;letter-spacing:inherit!important}
