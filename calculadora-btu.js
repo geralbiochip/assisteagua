@@ -61,8 +61,17 @@
         powerKw = (commercialBtu * 0.000293).toFixed(1) + ' kW';
       }
 
-      resultVal.textContent = commercialBtu.toLocaleString() + ' BTU (' + powerKw + ')';
-      resultTip.textContent = 'Estimativa base: ' + Math.round(rawBtu).toLocaleString() + ' BTU/h para ' + area + ' m². Recomendamos um equipamento comercial de ' + commercialBtu.toLocaleString() + ' BTU.';
+      const lang = (document.documentElement.lang || 'pt').split('-')[0].toLowerCase();
+      const locale = {en:'en-GB',es:'es-ES',fr:'fr-FR'}[lang];
+      const n = value => value.toLocaleString(locale);
+      const messages = {
+        pt:(r,a,c) => 'Estimativa base: ' + r + ' BTU/h para ' + a + ' m². Recomendamos um equipamento comercial de ' + c + ' BTU.',
+        en:(r,a,c) => 'Base estimate: ' + r + ' BTU/h for ' + a + ' m². We recommend a standard unit rated at ' + c + ' BTU.',
+        es:(r,a,c) => 'Estimación base: ' + r + ' BTU/h para ' + a + ' m². Recomendamos un equipo comercial de ' + c + ' BTU.',
+        fr:(r,a,c) => 'Estimation de base : ' + r + ' BTU/h pour ' + a + ' m². Nous recommandons un appareil standard de ' + c + ' BTU.'
+      };
+      resultVal.textContent = n(commercialBtu) + ' BTU (' + powerKw + ')';
+      resultTip.textContent = (messages[lang] || messages.pt)(n(Math.round(rawBtu)), lang === 'pt' ? area : n(area), n(commercialBtu));
       resultBox.hidden = false;
       resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
