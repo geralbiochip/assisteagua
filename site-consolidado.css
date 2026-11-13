@@ -18,3 +18,33 @@ html body footer.aa-footer .af-grid .af-brand a.af-logo::before,html body footer
 @media(max-width:850px){.aa-team-grid{grid-template-columns:1fr}.aa-team-qualifications{padding:20px}}
 @media(max-width:700px){html body header .reference-header #navigation>a{padding:8px 9px!important;min-height:40px!important;font-size:13px!important}html body main section.hero[class] .hero-grid[class] img{height:240px!important}.hero.hero-page-illustrated .hero-grid{grid-template-columns:1fr}.portfolio-gallery.aa-real-gallery{grid-template-columns:1fr}.aa-portfolio-photo img{height:310px}}
 @media(max-width:400px){html body main section.hero[class] .hero-grid[class] img{height:200px!important}}
+
+/* Correcao da faixa de marcas EN/ES/FR — 20261113 */
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-banner{margin-top:38px;background:#fff;border-top:1px solid #dce7ed;border-bottom:1px solid #dce7ed;color:#0b4f8a;padding:17px 0 13px}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-banner+.aa-footer{margin-top:0}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:6px}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-head h2{font-size:14px;line-height:1.5;margin:0;font-weight:600;color:#0b4f8a}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-viewport{overflow:hidden;max-width:100%}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-track{display:flex;width:max-content;animation:aa-bb-run-intl 88s linear infinite}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-group{display:flex;flex:0 0 auto;align-items:center;list-style:none;margin:0;padding:0;gap:0}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-group li{display:flex;align-items:center;justify-content:center;list-style:none;flex:0 0 124px;width:124px;height:56px;padding:6px 16px;box-sizing:border-box}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-group img{display:block;width:auto;height:auto;max-width:92px;max-height:32px;object-fit:contain}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-banner.is-paused .bb-track{animation-play-state:paused}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-viewport:hover .bb-track,html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-viewport:focus .bb-track{animation-play-state:paused}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-viewport:focus-visible{outline:2px solid #087fa8;outline-offset:-2px}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-note{font-size:10px;line-height:1.6;margin:8px 0 0;color:#0b4f8a}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-note a{color:#087fa8;text-decoration:underline}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-banner.is-reduced .bb-track{animation:none}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-banner.is-reduced .bb-group[aria-hidden=true]{display:none}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-banner.is-reduced .bb-viewport{overflow-x:auto}
+@keyframes aa-bb-run-intl{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-track{animation:none}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-group[aria-hidden=true]{display:none}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-viewport{overflow-x:auto}
+}
+@media(max-width:700px){
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-head{gap:10px}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-head h2{font-size:13px}
+html:is([lang|="en"],[lang|="es"],[lang|="fr"]) .bb-group li{flex-basis:112px;width:112px;padding:6px 10px}
+}
