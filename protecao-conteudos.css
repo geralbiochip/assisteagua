@@ -1,0 +1,4 @@
+/* Apenas impede selecao/arrastamento casual; nao e controlo de acesso. */
+img,picture,svg,canvas{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.btu-widget-card,.btu-content-card,#btu-calc-form,#btu-result-box{user-select:none!important;-webkit-user-select:none!important;-webkit-touch-callout:none}
+.btu-widget-card input,.btu-widget-card textarea,.btu-widget-card select,#btu-calc-form input,#btu-calc-form textarea,#btu-calc-form select{user-select:text!important;-webkit-user-select:text!important;-webkit-touch-callout:default}
