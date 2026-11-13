@@ -53,3 +53,28 @@ html body footer.aa-footer .af-grid .af-brand a.af-logo[href]::after{display:non
  html body header .reference-header a.brand>img[src]{width:280px!important}
  html body header .reference-header a.brand>img[src]{object-position:center!important}
 }
+
+/* Novas ilustracoes e efeito hover — AssisteAgua 20261113-1256 */
+html body main .hero .page-illustration img[src*="conforto-casa"]{content:url("images/sobre-nos-nova.jpg")}
+html body main .hero img.home-scene,
+html body main .hero img[src*="conforto-casa"],
+html body main .hero img[src*="portfolio-ilustracao-atual"],
+html body main .hero img[src*="contactos-ilustracao"],
+html body main .hero img[src*="sobre-nos-ilustracao"],
+html body main .hero img[src*="sobre-nos-nova"]{transform-origin:center center;transition:transform .45s ease,filter .45s ease}
+@media(hover:hover) and (pointer:fine){
+html body main .hero img.home-scene:hover,
+html body main .hero img[src*="conforto-casa"]:hover,
+html body main .hero img[src*="portfolio-ilustracao-atual"]:hover,
+html body main .hero img[src*="contactos-ilustracao"]:hover,
+html body main .hero img[src*="sobre-nos-ilustracao"]:hover,
+html body main .hero img[src*="sobre-nos-nova"]:hover{transform:translateY(-3px) scale(1.035);filter:drop-shadow(0 10px 16px rgba(11,79,138,.14))}
+}
+@media(prefers-reduced-motion:reduce){
+html body main .hero img.home-scene,
+html body main .hero img[src*="conforto-casa"],
+html body main .hero img[src*="portfolio-ilustracao-atual"],
+html body main .hero img[src*="contactos-ilustracao"],
+html body main .hero img[src*="sobre-nos-ilustracao"],
+html body main .hero img[src*="sobre-nos-nova"]{transition:none!important;transform:none!important}
+}
