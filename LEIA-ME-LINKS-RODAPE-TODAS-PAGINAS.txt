@@ -1,0 +1,26 @@
+ASSISTEAGUA — LINKS DO LIVRO DE RECLAMACOES E ELOGIOS EM TODOS OS RODAPES
+
+ATUALIZACAO PONTUAL. NAO E UM SITE COMPLETO.
+
+INSTALAR
+1. Guarde uma copia da pasta completa do site.
+2. Extraia o ZIP separadamente.
+3. Copie todos os ficheiros HTML e as pastas en/, es/ e fr/ para a pasta completa, substituindo os ficheiros correspondentes.
+4. Nao apague o restante site nem a pasta images/.
+5. Atualize o navegador sem cache se necessario.
+
+O QUE FOI FEITO
+Acrescentados dois links externos no rodape de todas as paginas que tinham rodape com navegacao legal:
+- Livro de Reclamacoes: https://www.livroreclamacoes.pt/
+- Elogio ou sugestao: https://www.livroreclamacoes.pt/inicio/elogio-sugestao
+Os links foram colocados na lista de informacao legal, a seguir a "Reclamacoes e litigios".
+Nao foi acrescentada qualquer declaracao de inscricao, adesao, disponibilidade de livro fisico ou eletronico.
+Nao foi criado link direto a ficha da empresa, porque nao existe inscricao confirmada.
+Na pagina Reclamacoes e Litigios, foi removida a secao antiga "Livro de Reclamacoes" e o aviso de inscricao por confirmar, bem como o link geral no corpo da pagina.
+A secao RAL mantem a informacao sobre servicos ao domicilio na Area Metropolitana de Lisboa, CACCL e ausencia de adesao, se a atualizacao anterior tiver sido aplicada.
+Nao altera precos, deslocacoes, diagnostico, regra dos 15 dias, imagens, CSS, scripts ou sitemap.
+Nao foi feita auditoria juridica global nem publicacao no GitHub.
+
+VALIDACAO
+Todas as paginas HTML com rodape foram verificadas; referencias locais sem ficheiros em falta.
+Integridade do ZIP verificada. Sem teste visual em navegador.
