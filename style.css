@@ -727,22 +727,24 @@
 }
 
 .btu-widget-card {
-  background: #1c2e3d;
-  color: #ffffff;
-  border-radius: 18px;
-  padding: 32px 28px;
-  box-shadow: 0 12px 36px rgba(18, 48, 70, 0.14);
+  background: #ffffff;
+  color: #243342;
+  border: 1px solid #d8e5ed;
+  border-top: 4px solid #087fa8;
+  border-radius: 14px;
+  padding: 30px 28px;
+  box-shadow: 0 4px 18px rgba(8, 127, 168, 0.06);
   position: sticky;
   top: 24px;
 }
 .btu-widget-card h2 {
-  color: #e8ad36;
+  color: #0b4f8a;
   font-size: 24px;
   line-height: 1.25;
   margin: 0 0 10px;
 }
 .btu-widget-desc {
-  color: #b2c5d2;
+  color: #53616e;
   font-size: 13.5px;
   line-height: 1.5;
   margin: 0 0 22px;
@@ -754,15 +756,15 @@
   display: block;
   font-size: 13px;
   font-weight: 700;
-  color: #e1ebf2;
+  color: #243342;
   margin-bottom: 6px;
 }
 .btu-input,
 .btu-select {
   width: 100%;
-  background: #283c4c;
-  color: #ffffff;
-  border: 1px solid #3d5466;
+  background: #ffffff;
+  color: #243342;
+  border: 1px solid #ccd8df;
   border-radius: 8px;
   padding: 11px 14px;
   font-size: 14px;
@@ -771,7 +773,8 @@
 }
 .btu-input:focus,
 .btu-select:focus {
-  outline: 2px solid #087fa8;
+  outline: 3px solid #e8ad36;
+  outline-offset: 2px;
   border-color: #087fa8;
 }
 .btu-btn-calc {
@@ -788,14 +791,15 @@
   transition: background 0.15s, transform 0.15s;
 }
 .btu-btn-calc:hover {
-  background: #0a95c4;
+  background: #066586;
   transform: translateY(-1px);
 }
 .btu-widget-result {
   margin-top: 20px;
   padding: 18px;
-  background: #243847;
-  border: 1.5px solid #087fa8;
+  background: #f4f8fb;
+  border: 1px solid #d8e5ed;
+  border-left: 4px solid #087fa8;
   border-radius: 10px;
   text-align: center;
 }
@@ -803,17 +807,17 @@
   font-size: 11px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #a4bed0;
+  color: #087fa8;
 }
 .btu-result-value {
   font-size: 28px;
   font-weight: 800;
-  color: #e8ad36;
+  color: #0b4f8a;
   margin: 4px 0 6px;
 }
 .btu-result-tip {
   font-size: 12px;
-  color: #b2c5d2;
+  color: #53616e;
   margin: 0 0 12px;
   line-height: 1.4;
 }
@@ -828,12 +832,13 @@
   text-decoration: none;
 }
 .btu-result-btn:hover {
-  background: #0a94c2;
+  background: #066586;
+  color: #ffffff;
   text-decoration: none;
 }
 .btu-widget-disclaimer {
   font-size: 11px;
-  color: #8da4b3;
+  color: #63717c;
   line-height: 1.45;
   margin: 18px 0 0;
   text-align: center;
